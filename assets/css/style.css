@@ -1,0 +1,39 @@
+/* 1. VARIÁVEIS GLOBAIS (A Paleta das Terras Magestosas) */
+:root{
+    /*Cores de Fundo e Textos*/
+    --cor-fundo-escuro: #0a0a0c;
+    --cor-superficie: #1a1a1f;
+    --cor-texto-principal: #e4e4e7;
+    --cor-texto-secundario: #a1a1aa;
+    --cor-sangue-lamina: #8b0000;
+    --cor-magia-mineral: #4a90e2;
+    --fonte-texto: 'Inter', sans-serif;
+    --fonte-titulo: 'Cinzel', serif;
+}
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-texto);
+    line-height: 1.6;;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fonte-titulo);
+    font-width: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color: var(--cor-texto-principal);
+}
+
+h1 {
+    color: var(--cor-magia-mineral);
+    text-transform: uppercase;
+}
