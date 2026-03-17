@@ -66,3 +66,31 @@ nav a {
 nav a:hover {
     color: var(--cor-magia-mineral);
 }
+
+/* 
+ -----CARTÕES DA SESSÃO DE DESTAQUE-----
+*/
+
+#destaques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 5%;
+    justify-content: center;
+}
+
+#destaques article{
+    background-color: var(--cor-superficie);
+    padding: 2rem;
+    border-top: 3px solid var(--cor-magia-mineral);
+    border-radius: 4px;
+    flex: 1 1 300px;
+}
+
+#destaques article h3 {
+    color: var(--cor-sangue-lamina);
+}
+
+#destaques article p {
+    margin-bottom: 1.5rem;
+}
