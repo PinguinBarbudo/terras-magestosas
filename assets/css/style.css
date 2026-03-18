@@ -1,4 +1,4 @@
-/* 1. VARIÁVEIS GLOBAIS (A Paleta das Terras Magestosas) */
+/* 1. VARIÁVEIS GLOBAIS (A Paleta das Terras Majestosas) */
 :root{
     /*Cores de Fundo e Textos*/
     --cor-fundo-escuro: #0a0a0c;
@@ -23,12 +23,11 @@ body{
     background-color: var(--cor-fundo-escuro);
     color: var(--cor-texto-principal);
     font-family: var(--fonte-texto);
-    line-height: 1.6;;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--fonte-titulo);
-    font-width: 700;
     margin-bottom: 1rem;
     letter-spacing: 1px;
     color: var(--cor-texto-principal);
@@ -46,6 +45,10 @@ header {
     padding: 1.3rem 5%;
     background-color: var(--cor-superficie);
     border-bottom: 2px solid var(--cor-sangue-lamina);
+}
+header a{
+    text-decoration: none;
+    color: var(--cor-magia-mineral);
 }
 
 header h1{
@@ -217,7 +220,7 @@ footer{
 }
 
 .small{
-    font-size: 0.2rem;
+    font-size: 0.8rem;
     color:#3a3a35;
 }
 
@@ -229,9 +232,89 @@ footer{
 }
 
 /*
+-----páginas internas
+*/
+.container-leitura{
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 5%;
+}
+
+.cabecalho-artigo{
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #2a2a35;
+    padding-bottom: 2rem;
+}
+
+.tag-categoria{
+    color: var(--cor-ouro-antigo);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.cabecalho-artigo h1{
+    font-size: 3rem;
+    color: var(--cor-sangue-lamina);
+    margin: 1rem 0;
+}
+
+
+.subtitulo{
+    font-size: 1.2rem;
+    color: var(--cor-texto-secundario);
+    font-style: italic;
+}
+
+.conteudo-texto p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.conteudo-texto a{
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    transition: all 0.3s ease;
+}
+
+.conteudo-texto a:hover{
+    color: var(--cor-magia-mineral);
+}
+
+.conteudo-texto h2{
+    margin-top: 3rem;
+    color: var(--cor-magia-mineral);
+}
+
+.conteudo-texto ul{
+    margin: 2rem 0 2rem 2rem;
+}
+
+.conteudo-texto li{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.conteudo-texto blockquote {
+    background-color: var(--cor-superficie);
+    border-left: 4px solid var(--cor-ouro-antigo);
+    padding: 2rem;
+    margin: 3rem 0;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--cor-texto-principal);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/*
 -----Responsividade-----
 */
-@media (max-width: 768px){
+@media (max-width: 920px){
     header{
         flex-direction: column;
         gap: 1.5rem;
