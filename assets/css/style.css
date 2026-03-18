@@ -5,8 +5,9 @@
     --cor-superficie: #1a1a1f;
     --cor-texto-principal: #e4e4e7;
     --cor-texto-secundario: #a1a1aa;
-    --cor-sangue-lamina: #8b0000;
+    --cor-sangue-lamina: #e63946;
     --cor-magia-mineral: #4a90e2;
+    --cor-ouro-antigo: #D4AF37;
     --fonte-texto: 'Inter', sans-serif;
     --fonte-titulo: 'Cinzel', serif;
 }
@@ -42,9 +43,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5%;
+    padding: 1.3rem 5%;
     background-color: var(--cor-superficie);
     border-bottom: 2px solid var(--cor-sangue-lamina);
+}
+
+header h1{
+    margin-bottom: 0;
 }
 
 nav ul {
@@ -88,9 +93,30 @@ nav a:hover {
 }
 
 #destaques article h3 {
-    color: var(--cor-sangue-lamina);
+    color: var(--cor-ouro-antigo);
 }
 
 #destaques article p {
     margin-bottom: 1.5rem;
+}
+
+/*
+-----Melhoria nos links-----
+*/
+
+#destaques article a {
+    display: inline-block;
+    margin-top: 1 rem;
+    text-decoration: none;
+    color: var(--cor-magia-mineral);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+#destaques article a:hover {
+    color: var(--cor-texto-principal);
+    transform: translate(5px);
 }
