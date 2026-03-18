@@ -120,3 +120,36 @@ nav a:hover {
     color: var(--cor-texto-principal);
     transform: translate(5px);
 }
+
+/*
+-----Hero-----
+*/
+
+#hero{
+    background-image: linear-gradient(rgba(10, 10, 12, 0.25), rgba(10,10,12,0.65)), url(../img/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+#hero h2{
+    font-size: 2.5rem;
+    max-width: 800px;
+    color: var(--cor-ouro-antigo);
+    text-transform: uppercase;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    color: var(--cor-texto-principal);
+}
