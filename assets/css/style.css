@@ -121,6 +121,13 @@ nav a:hover {
     transform: translate(5px);
 }
 
+#destaques article i{
+    font-size: 2.5rem;
+    color: var(--cor-ouro-antigo);
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
 /*
 -----Hero-----
 */
