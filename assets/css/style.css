@@ -109,7 +109,7 @@ nav a:hover {
 
 #destaques article a {
     display: inline-block;
-    margin-top: 1 rem;
+    margin-top: 1rem;
     text-decoration: none;
     color: var(--cor-magia-mineral);
     font-weight: 700;
@@ -121,7 +121,7 @@ nav a:hover {
 
 #destaques article a:hover {
     color: var(--cor-texto-principal);
-    transform: translate(5px);
+    transform: translate(5px, 2px);
 }
 
 #destaques article i{
@@ -310,6 +310,58 @@ footer{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/*
+-----404-----
+*/
+.comum{
+    background-image: linear-gradient(rgba(10,10,12,0.25), rgba(10,10,12,0.85)), url(../img/404-bg.png);
+}
+
+.jorah{
+    background-image: linear-gradient(rgba(10,10,12,0.25), rgba(10,10,12,0.65)), url(../img/Jorah.png);
+}
+
+.lathariel{
+    background-image: linear-gradient(rgba(03,03,09,1), rgb(2, 2, 32), rgba(32, 15, 43, 0.74)), url(../img/Lathariel.png)
+}
+
+.pagina-nao-encontrada{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.pagina-nao-encontrada h2{
+    font-size: 2.5rem;
+    max-width: 800px;
+    color: var(--cor-ouro-antigo);
+    text-transform: uppercase;
+}
+
+.pagina-nao-encontrada p{
+    font-size: 1.1rem;
+    max-width: 700px;
+    color: var(--cor-texto-principal);
+}
+
+.pagina-nao-encontrada a{
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    transition: all 0.3s ease;
+}
+
+.pagina-nao-encontrada a:hover{
+    color: var(--cor-magia-mineral);
+}
 
 /*
 -----Responsividade-----
